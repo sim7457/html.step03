@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 웹 01</title>
+    <link rel="stylesheet" href="./html_step01/reset.css">
+    <style>
+        body {
+            height: 200vh;
+        }
+
+
+
+        .mainVisual {
+            position: relative;
+            height: 100vh;
+            background: url(./img/m01.jpg) no-repeat center center/cover;
+        }
+
+        .mainVisual .inner {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            transform: translate(-50%, -50%);
+            padding: 0 15px;
+        }
+
+        .mainVisual .inner h2 {
+            font-size: 5vw;
+            margin: 0 0 10px 0;
+            color: #fff;
+        }
+
+        .mainVisual .inner p {
+            font-size: 15px;
+            color: #fff;
+        }
+
+
+        .mopen {
+            display: none;
+        }
+
+        @media (max-width:768px) {
+            .mopen {
+                position: fixed;
+                top: 30px;
+                right: 30px;
+
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="mainVisual">
+        <div class="inner">
+            <h2>Lorem, ipsum.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur recusandae debitis officiis eaque
+                voluptate veritatis maxime laudantium sed?</p>
+        </div>
+    </section>
+    <button class="mopen">
+        <i class="xi-bars"></i>
+    </button>
+    <div class="inner2">
+        <h2>Lorem, ipsum.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur recusandae debitis officiis eaque
+            voluptate veritatis maxime laudantium sed?</p>
+    </div>
+</body>
+
+</html>
